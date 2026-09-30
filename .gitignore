@@ -49,3 +49,7 @@ __pycache__/
 venv/
 node_modules/
 .DS_Store
+
+# the two tables that belong to the repository (the numbers map and the plausibility bounds)
+!NUMBERS_MAP.tsv
+!oximetry_extraction/E2_tables/plausibility_bounds.csv
