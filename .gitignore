@@ -1,0 +1,51 @@
+# data, tables, caches and outputs never enter the repository
+*.parquet
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.feather
+*.jsonl
+*.csv
+!analysis/numbers/measure_families.csv
+*.xlsx
+*.tsv
+*.json
+*.provenance.json
+*.tar.gz
+*.zip
+*.log
+*.pdf
+*.png
+*.tif
+*.tiff
+*.svg
+*.docx
+*.xml
+
+# working folders of the analysis and figure lanes (sheet outputs are caught by the extension rules above;
+# two folders named work hold code and are tracked: ROUND40 LS_SKETCH/work/_build and ROUND18 LC_panels/work)
+**/verify/
+**/logs/
+**/_render_cache/
+**/_render.lock
+**/previews/
+**/crops/
+**/L5b_work/
+**/census/
+**/scratch/
+**/checkpoint*/
+**/.rank_v3_work/
+**/_ck*/
+figures/**/NEW_FINAL_SET_*/
+figures/**/figures/word_png_*/
+
+# environments and bytecode
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.DS_Store
